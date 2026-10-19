@@ -19,7 +19,7 @@ function CookieClicker() {
 
       <button className="cookie-button" onClick={handleClick}>
         <img
-          src="/cookie.png"
+          src={`${import.meta.env.BASE_URL}cookie.png`}
           alt="Chocolate chip cookie"
           className="cookie-image"
         />
