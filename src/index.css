@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f5f0;
+  color: #2d2118;
+}
+
+/* Hele applikasjonen */
+
+.app {
+  min-height: 100vh;
+}
+
+/* Toppseksjon */
+
+.app-header {
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+
+.app-header h1 {
+  font-size: 42px;
+  color: #6b3e26;
+  margin: 0 0 15px;
+}
+
+.app-header p {
+  font-size: 17px;
+  color: #806047;
+  margin: 0;
+}
+
+/* Hovedinnhold */
+
+.app-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 20px 50px;
+}
+
+/* Avstand mellom komponentene */
+
+.app-content > div {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+/* Bunntekst */
+
+.app-footer {
+  text-align: center;
+  padding: 25px 20px;
+  background-color: #f3dfc4;
+  border-top: 2px solid #e8d4b8;
+}
+
+.app-footer p {
+  margin: 0;
+  color: #6b3e26;
+  font-size: 14px;
+}
+
+/* Mobilvisning */
+
+@media (max-width: 600px) {
+  .app-header {
+    padding: 35px 15px 20px;
+  }
+
+  .app-header h1 {
+    font-size: 30px;
+  }
+
+  .app-header p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .app-content {
+    padding: 10px 15px 30px;
+  }
+
+  .app-content > div {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,180 @@
+.users-card {
+  background-color: #fff8ed;
+  border: 2px solid #e8d4b8;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 650px;
+  margin: 30px auto;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(80, 50, 20, 0.1);
+}
+
+.users-card h2 {
+  font-size: 28px;
+  color: #6b3e26;
+  margin-top: 0;
+}
+
+.users-card > p {
+  color: #806047;
+}
+
+/* Registreringsskjema */
+
+.users-form {
+  background-color: #f3dfc4;
+  border-radius: 15px;
+  padding: 25px;
+  margin-top: 25px;
+  text-align: left;
+}
+
+.users-form h3 {
+  color: #5c321b;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #5c321b;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  padding: 12px;
+  border: 2px solid #e8d4b8;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fffaf3;
+  color: #2d2118;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #8b5e3c;
+}
+
+/* Knapp */
+
+.add-user-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #8b5e3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-user-button:hover {
+  background-color: #6b3e26;
+}
+
+.add-user-button:active {
+  transform: scale(0.98);
+}
+
+.add-user-button:focus-visible {
+  outline: 3px solid #5c321b;
+  outline-offset: 3px;
+}
+
+/* Antall brukere */
+
+.users-count {
+  color: #6b3e26;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Brukerliste */
+
+.users-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #f3dfc4;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 12px;
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.user-item:hover {
+  transform: translateY(-3px);
+}
+
+/* Avatar */
+
+.user-avatar {
+  background-color: #8b5e3c;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Brukerinformasjon */
+
+.user-info {
+  min-width: 0;
+}
+
+.user-info h3 {
+  margin: 0 0 5px 0;
+  color: #5c321b;
+  font-size: 17px;
+}
+
+.user-info p {
+  margin: 0;
+  color: #806047;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+/* Mobilvisning */
+
+@media (max-width: 600px) {
+  .users-card {
+    margin: 20px 15px;
+    padding: 20px;
+  }
+
+  .users-form {
+    padding: 15px;
+  }
+
+  .users-card h2 {
+    font-size: 24px;
+  }
+
+  .user-item {
+    padding: 12px;
+    gap: 10px;
+  }
+}

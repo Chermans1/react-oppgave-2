@@ -1,0 +1,113 @@
+.cat-card {
+  background-color: #fff8ed;
+  border: 2px solid #e8d4b8;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 650px;
+  margin: 30px auto;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(80, 50, 20, 0.1);
+}
+
+.cat-card h2 {
+  font-size: 28px;
+  color: #6b3e26;
+  margin-top: 0;
+}
+
+.cat-card > p {
+  color: #806047;
+}
+
+.cat-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.cat-fact {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background-color: #f3dfc4;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 12px;
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.cat-fact:hover {
+  transform: translateY(-3px);
+}
+
+.fact-number {
+  background-color: #8b5e3c;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  min-width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cat-fact p {
+  margin: 5px 0;
+  color: #5c321b;
+  line-height: 1.5;
+}
+
+.cat-error {
+  color: #b42318;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .cat-card {
+    margin: 20px 15px;
+    padding: 20px;
+  }
+
+  .cat-fact {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .cat-card h2 {
+    font-size: 24px;
+  }
+}
+/* Knapp for å hente nye kattfakta */
+
+.cat-button {
+  background-color: #8b5e3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.2s ease;
+}
+
+.cat-button:hover {
+  background-color: #6b3e26;
+}
+
+.cat-button:active {
+  transform: scale(0.98);
+}
+
+.cat-button:focus-visible {
+  outline: 3px solid #5c321b;
+  outline-offset: 3px;
+}
+
+.cat-button:disabled {
+  background-color: #bba18b;
+  cursor: not-allowed;
+}
